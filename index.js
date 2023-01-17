@@ -12,12 +12,15 @@ const sketch = () => {
     context.fillStyle = 'black';
     context.font = '1200px sans-serif';
     context.textBaseline = 'middle';
-    context.textAlign = 'center';
+   // context.textAlign = 'center'; better method to center below
+    
+    const text = 'E';
+    const metrics = context.measureText(text);
 
     context.save();
-    context.translate(width * 0.5, height * 0.5);
+   // context.translate(width * 0.5, height * 0.5); not needed with
 
-    context.fillText('E', 0, 0);
+    context.fillText(text, 0, 0);
     context.restore();
 
   };
