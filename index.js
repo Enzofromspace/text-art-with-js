@@ -6,7 +6,7 @@ const settings = {
 
 let text = 'E';
 let fontSize = 1200;
-let fontFamily = 'sans-serif';
+let fontFamily = 'trebuchet MS';
 
 const sketch = () => {
   return ({ context, width, height }) => {
